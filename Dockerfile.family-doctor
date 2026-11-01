@@ -1,0 +1,15 @@
+# syntax=docker/dockerfile:1
+# Local Mac-only analysis companion. Never a production/background service.
+FROM deluan/navidrome@sha256:38dc2727bfcfd5ede290f8ada114fc90368146f265ae4701ddddbcbe2a44ee52 AS tools
+USER root
+RUN apk add --no-cache python3 py3-numpy chromaprint
+RUN fpcalc -version && ffmpeg -version
+FROM tools
+ARG GIT_SHA=development
+LABEL org.opencontainers.image.source="https://github.com/aitishnyk/family-music-home" \
+      org.opencontainers.image.revision="${GIT_SHA}" \
+      net.navidrome.family.role="doctor-companion"
+COPY integrations/doctor/analyze.py /doctor/analyze.py
+ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1 OPENBLAS_NUM_THREADS=1 OMP_NUM_THREADS=1
+USER 502:20
+ENTRYPOINT ["python3", "/doctor/analyze.py"]

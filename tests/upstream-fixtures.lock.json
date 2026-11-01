@@ -1,0 +1,472 @@
+{
+  "files": {
+    "#snapshot/.gitkeep": {
+      "mode": "100644",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "$Recycle.Bin/.gitkeep": {
+      "mode": "100644",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "...unhidden_folder/.gitkeep": {
+      "mode": "100644",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "._02 Invisible.mp3": {
+      "mode": "100644",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    ".hidden_folder/.gitkeep": {
+      "mode": "100644",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "01 Invisible (RED) Edit Version.m4a": {
+      "mode": "100644",
+      "sha256": "255c89bf78da4a073458d92bc2eb41272b23ef43934d46f03798fad40ddc4a69"
+    },
+    "01 Invisible (RED) Edit Version.mp3": {
+      "mode": "100644",
+      "sha256": "51fe1ce7207ec4365a0b5624d9c42a35be492e6be2900b641f704487ffc7cf21"
+    },
+    "artist/an-album/artist.png": {
+      "mode": "100644",
+      "sha256": "b9fd9d1ef17d8f931bb5eb6c47eaece74b22d94199c20bb2761be80c8a80cef1"
+    },
+    "artist/an-album/cover.jpg": {
+      "mode": "100644",
+      "sha256": "5c89400da0a14fc4f9ff756e845af308371874608a613fb2f02876190a23c7dc"
+    },
+    "artist/an-album/front.png": {
+      "mode": "100644",
+      "sha256": "b9fd9d1ef17d8f931bb5eb6c47eaece74b22d94199c20bb2761be80c8a80cef1"
+    },
+    "artist/an-album/test.mp3": {
+      "mode": "100644",
+      "sha256": "1172cb8790c9d0623e64a16cca087029e19f758c673dedcc5c427f88aa51e379"
+    },
+    "artist/artist.jpg": {
+      "mode": "100644",
+      "sha256": "5c89400da0a14fc4f9ff756e845af308371874608a613fb2f02876190a23c7dc"
+    },
+    "bom-test.lrc": {
+      "mode": "100644",
+      "sha256": "992d576265245e446cfb7196e5cd03b7ea2771161e4d08c2776b7170c0060824"
+    },
+    "bom-test.ttml": {
+      "mode": "100644",
+      "sha256": "0d899de7a393103352162e210d6cb2c637975644ee5ae70f46c0ff5a08706c61"
+    },
+    "bom-utf16-test.lrc": {
+      "mode": "100644",
+      "sha256": "539dd7e0338b7915f0b618f5d30b0fce56bc0d137671ac7cdb53d347fbf4666f"
+    },
+    "bom-utf16-test.ttml": {
+      "mode": "100644",
+      "sha256": "a26a369157f12d42c1e0216dd2a1f8c8c7caa2e83a76ff2b2539a0775ed662eb"
+    },
+    "deezer.artist.bio.empty.json": {
+      "mode": "100644",
+      "sha256": "488f16356f3076bd726a3bc4e0b254dd8aa04cf10da41f42abab7b738d4696c1"
+    },
+    "deezer.artist.bio.en.json": {
+      "mode": "100644",
+      "sha256": "6d1db8a7a594d9aa724467920b60288144666c54ffb53c802592d5ee041fed07"
+    },
+    "deezer.artist.bio.fr.json": {
+      "mode": "100644",
+      "sha256": "826565fbbe370dbaff5928bb966a0267b0133246009fbe0f8ad667cda1399cd2"
+    },
+    "deezer.artist.related.json": {
+      "mode": "100644",
+      "sha256": "2e7078f61e80937ce6fc26f89928cbdc08960a1f09e5cccd1685f9ec180d08e2"
+    },
+    "deezer.artist.top.json": {
+      "mode": "100644",
+      "sha256": "72bc33b45710cc482bb8300313c0c62466423b67a4848499f8191b0174286c88"
+    },
+    "deezer.search.artist.json": {
+      "mode": "100644",
+      "sha256": "daa47cb3e5418ad754f70d07aea66a2f240dea6c24269ddf0adfa60dc267b1a3"
+    },
+    "empty.txt": {
+      "mode": "100644",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "empty_folder/not_an_audio_file.txt": {
+      "mode": "100644",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "ignored_folder/.ndignore": {
+      "mode": "100644",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    "index.html": {
+      "mode": "100644",
+      "sha256": "ccc1d87a7a3a302ab1823bbd8759e1a627e21143c3cafa12f481dc0d23e10b28"
+    },
+    "invalid-files/test-invalid-frame.mp3": {
+      "mode": "100644",
+      "sha256": "54c36ebc7d483541403d3b702d238943c4e68046e92dc16671cfb8c0e1bffbcc"
+    },
+    "itunes-library.xml": {
+      "mode": "100644",
+      "sha256": "a652d4813938ea0c0dfdb253d8f75422647071b62b8d7209dfe9278e33de1835"
+    },
+    "lastfm.album.getinfo.empty.json": {
+      "mode": "100644",
+      "sha256": "690e8bc7649c83ae6a1ff7ec3a76cb79d700c8770b89f9d82e013562022c46d8"
+    },
+    "lastfm.album.getinfo.empty_urls.json": {
+      "mode": "100644",
+      "sha256": "fc69f9bfa29ddd32bc1e40d8608824e46bd5795860d7381838aafe7e50ab2055"
+    },
+    "lastfm.album.getinfo.en.json": {
+      "mode": "100644",
+      "sha256": "aea1aded891c81b6b13abe3bd868b31fe4369e41b8cfcf1ff67ca0908cfb0055"
+    },
+    "lastfm.album.getinfo.json": {
+      "mode": "100644",
+      "sha256": "4582238493d53e62ec7c8440c15d8e023b3f8e9e425beba21418c7c4814f1bff"
+    },
+    "lastfm.artist.getinfo.empty.json": {
+      "mode": "100644",
+      "sha256": "90a89f158e2efa60a08bb7c25b28aabb5ae6638d1a941cf0aa723d5b588ea13c"
+    },
+    "lastfm.artist.getinfo.en.json": {
+      "mode": "100644",
+      "sha256": "fa00ba4cbc9a07512efe0718d2b30a2f43f2201baaac246ccd347a3269c9aaaa"
+    },
+    "lastfm.artist.getinfo.json": {
+      "mode": "100644",
+      "sha256": "cfa2e6ff6597ae5c1610b982c151aeb88ff970bbb35a9f9127a91d20e9c9789d"
+    },
+    "lastfm.artist.getinfo.unknown.json": {
+      "mode": "100644",
+      "sha256": "8c8e4e3b2505aa1d4f1de9e2ad566d814dfdfd641ec66dbb031b24ca478b6366"
+    },
+    "lastfm.artist.getsimilar.json": {
+      "mode": "100644",
+      "sha256": "26940342e70bdf33b2a53172b67e3ccbadf071ee1e160d5d8d8f732c44b81f98"
+    },
+    "lastfm.artist.getsimilar.unknown.json": {
+      "mode": "100644",
+      "sha256": "b6dd68224c225c0c00f909ce54c7ec4eef974c12e199eaa60c8b0e6d068c9348"
+    },
+    "lastfm.artist.gettoptracks.json": {
+      "mode": "100644",
+      "sha256": "17953750a3a0c7be1f3140cb99c3d0b823554c984ababf340ea32138b996d77a"
+    },
+    "lastfm.artist.gettoptracks.unknown.json": {
+      "mode": "100644",
+      "sha256": "cf3e60279a4f8e30cf97e1ef9cd8078d044388333f00a06b154b86f03f687776"
+    },
+    "lastfm.artist.page.challenge.html": {
+      "mode": "100644",
+      "sha256": "32ed63159c77e21ee19ca1b9aa3213ccf0218eb59539560b132a8e68ef0e18ea"
+    },
+    "lastfm.artist.page.html": {
+      "mode": "100644",
+      "sha256": "e294a0665de5186b31dd0061ad0c9f0bfd353bb0864edf3122bba12136eb13b5"
+    },
+    "lastfm.artist.page.ignored.html": {
+      "mode": "100644",
+      "sha256": "71912f6abb0e622e06bf375dcfc3ce26de64ee8db8a411a560d1378fa4dec6d5"
+    },
+    "lastfm.artist.page.no_meta.html": {
+      "mode": "100644",
+      "sha256": "0eed2c64bcd40d135d8cc923ba8ae9a14ee42d7a4841fd175f2c32f932ea757b"
+    },
+    "lastfm.track.getsimilar.json": {
+      "mode": "100644",
+      "sha256": "a684d3301c02da080ed0c09c3fb437bea0c98e955ab58dda139c6f428bd26bc0"
+    },
+    "lastfm.track.getsimilar.unknown.json": {
+      "mode": "100644",
+      "sha256": "d64def9a52d1f157b001a96d17f09e37592481a7730ce9d7d3d169e310ef290b"
+    },
+    "listenbrainz.artist.metadata.homepage.json": {
+      "mode": "100644",
+      "sha256": "2b31d1d9d9eeccf6a10216ac14bec1291da54e00d81c40ff68277a281446b5f9"
+    },
+    "listenbrainz.artist.metadata.no_homepage.json": {
+      "mode": "100644",
+      "sha256": "5ac64149308cfbb28d2862b488440093a08a61d365732d0429c96942ebd05190"
+    },
+    "listenbrainz.labs.similar-artists.json": {
+      "mode": "100644",
+      "sha256": "ee14933d6139614f26379fc56c0b76a3363f47413a1dc6c2512c0b6c410f4d43"
+    },
+    "listenbrainz.labs.similar-recordings-real-out-of-order.json": {
+      "mode": "100644",
+      "sha256": "6028d7d3701657f10d754241b343a2a2c02f017c16f783e3dfdde5222c4cc77a"
+    },
+    "listenbrainz.labs.similar-recordings.json": {
+      "mode": "100644",
+      "sha256": "3afdbae8672a26af91508955bc006ea26d0b4d634c228c509e18fd187fbbde58"
+    },
+    "listenbrainz.nowplaying.request.json": {
+      "mode": "100644",
+      "sha256": "1ed2905103648a802fc6fde53fce0f66a0e345af6b8d8d30d1b80637cb044f1f"
+    },
+    "listenbrainz.popularity.json": {
+      "mode": "100644",
+      "sha256": "7c5fc31e9385dd58a017b274b138515d6850dbc0afc4b927f239f88e9cbe4f9b"
+    },
+    "listenbrainz.scrobble.request.json": {
+      "mode": "100644",
+      "sha256": "e4d7048b7b9f749ef8eb24b52ce60b114208c2be08b263e5d5373afb41d4a55a"
+    },
+    "lyrics/auld-lang-syne.elrc": {
+      "mode": "100644",
+      "sha256": "e89b30b442857b1a1276d1e5b35636ef73e36b7012cc9d63f39bf2ca2bd4e6d9"
+    },
+    "lyrics/auld-lang-syne.lrc": {
+      "mode": "100644",
+      "sha256": "4973e5542afc7d20b199e12118505e16770e2336ed2f244700d9f41443af9744"
+    },
+    "lyrics/auld-lang-syne.srt": {
+      "mode": "100644",
+      "sha256": "dc6acb42ac4ca759e2a5639356fc369b70d4a4843acb9c54ffbf8cab15cb65a6"
+    },
+    "lyrics/auld-lang-syne.ttml": {
+      "mode": "100644",
+      "sha256": "328e576971e2a39d465ad46e079b49b84e6f3d0d926dffc1d172e85358f3594a"
+    },
+    "lyrics/auld-lang-syne.txt": {
+      "mode": "100644",
+      "sha256": "c7a0a540ff7aa8f4104c2c93563da7ee5d5483d06d14679be4ad443467f63dae"
+    },
+    "lyrics/auld-lang-syne.yaml": {
+      "mode": "100644",
+      "sha256": "03a55693bda580f136785c4ec2d785bb70a6f3a67e1f09ae23dcbe54bd8677f9"
+    },
+    "mixed-lyrics.flac": {
+      "mode": "100644",
+      "sha256": "8354f5020e43be84d2850cf3d9c50552df32f74e098591bf863610424672e625"
+    },
+    "no_replaygain.mp3": {
+      "mode": "100644",
+      "sha256": "afed120af711e26c9e0c512dec19a3b9350955766dc0b480735ae88e476b29b2"
+    },
+    "playlists/bom-test-utf16.m3u": {
+      "mode": "100644",
+      "sha256": "29ba6693a6f4067fe0688eb01634c15ad4e05bf4c8e18075ac99ce4c29cc2f00"
+    },
+    "playlists/bom-test.m3u": {
+      "mode": "100644",
+      "sha256": "12b38d8c9c69b4552ca8d892f20c7eb0362d8095d2f9afa4d80889d125934b83"
+    },
+    "playlists/cr-ended.m3u": {
+      "mode": "100644",
+      "sha256": "27f3a94c2fd05daaa16558583a2d020d931124a6aa82d75bb7076692c08531f7"
+    },
+    "playlists/invalid_json.nsp": {
+      "mode": "100644",
+      "sha256": "d27c64c3c943b57174372784be966919910ee4e5221209e77374031467cb2959"
+    },
+    "playlists/lf-ended.m3u": {
+      "mode": "100644",
+      "sha256": "1c644decc3b1d5c1297ed6e024428b87040ae68298805c6d88f3e09ed76ffd55"
+    },
+    "playlists/pls-with-art-url.m3u": {
+      "mode": "100644",
+      "sha256": "a913959b81fee1e84d419bb2ce866b81c5d67b98cab0609b396cbdd332610037"
+    },
+    "playlists/pls-with-name.m3u": {
+      "mode": "100644",
+      "sha256": "d9e1aee6eab098c733190dcfba037c499d25f8220519839c98e58bbe57ff0428"
+    },
+    "playlists/pls-without-name.m3u": {
+      "mode": "100644",
+      "sha256": "b3aa95c2dd606f1e47b4039e85a12b65862f3e114204dd74c51b98ea5548e141"
+    },
+    "playlists/pls1.m3u": {
+      "mode": "100644",
+      "sha256": "8f1414b493eb6c36c7952ecf1b6e1a056a88bc27c5cd3649612bdbb3174562c6"
+    },
+    "playlists/private_playlist.nsp": {
+      "mode": "100644",
+      "sha256": "91919c160eada00ff31211ae63349b4e4c27ecc49ce49a93a1784e92f1b1d796"
+    },
+    "playlists/public_playlist.nsp": {
+      "mode": "100644",
+      "sha256": "76580c8494abc1fbecb6703eac2a12aeb256a07953d48f4277c1f035fe9858d5"
+    },
+    "playlists/recently_played.nsp": {
+      "mode": "100644",
+      "sha256": "80ff45a9126eb79011185d791d646c4f0c4face9f3ddee6c3a63eb770795cf15"
+    },
+    "playlists/subfolder1/.hidden_playlist1.m3u": {
+      "mode": "100644",
+      "sha256": "98eb6875570d16204ad987217f4c5bf1abd167b100edc49991106d53732e4362"
+    },
+    "playlists/subfolder1/pls1.m3u": {
+      "mode": "100644",
+      "sha256": "98eb6875570d16204ad987217f4c5bf1abd167b100edc49991106d53732e4362"
+    },
+    "playlists/subfolder2/.hidden_playlist2.m3u": {
+      "mode": "100644",
+      "sha256": "98eb6875570d16204ad987217f4c5bf1abd167b100edc49991106d53732e4362"
+    },
+    "playlists/subfolder2/pls2.m3u": {
+      "mode": "100644",
+      "sha256": "1b845da8aa6ce3204d0e26dad36352fd8b8f8d7c94ee8ee866ec16e2c22292b8"
+    },
+    "robots.txt": {
+      "mode": "100644",
+      "sha256": "e1248a71de21ee82d17c085623bf2deeb5d4e68656c89c53cba6fdd8560b4136"
+    },
+    "spotify.search.artist.json": {
+      "mode": "100644",
+      "sha256": "be15a7653aa6063b0d1f8cfc449fabec5872a73f2fe95d53387e8153d4cb8853"
+    },
+    "symlink": {
+      "mode": "120000",
+      "sha256": "0eb547304658805aad788d320f10bf1f292797b5e6d745a3bf617584da017051",
+      "target": "index.html"
+    },
+    "symlink2dir": {
+      "mode": "120000",
+      "sha256": "1b4802ba56c1895b7f2c03e02c6635394cb9ca31541393de001420807f762ae0",
+      "target": "empty_folder"
+    },
+    "symlink_chain/evil1.mp3": {
+      "mode": "120000",
+      "sha256": "579ab2998552564d21fcb88b6675210553fd42fca94b9d90a648013dcaa6553f",
+      "target": "../index.html"
+    },
+    "symlink_chain/evil2.mp3": {
+      "mode": "120000",
+      "sha256": "b3d1eeabdc7a23d8337b5f8c5cd41daaf24a7676fdfe5efb75515481843441d2",
+      "target": "evil1.mp3"
+    },
+    "symlink_chain/evil3.mp3": {
+      "mode": "120000",
+      "sha256": "1fecf3397f6f20340943fc5ae327c3632c78453089f242e9a2088c483ea3978c",
+      "target": "evil2.mp3"
+    },
+    "symlink_chain/level1.mp3": {
+      "mode": "120000",
+      "sha256": "62d0939015b1404415cb82e3ae8310709773cbcabafa185e64adf6be0b8b4830",
+      "target": "../test.mp3"
+    },
+    "symlink_chain/level2.mp3": {
+      "mode": "120000",
+      "sha256": "7dc4f7243bcde55bfb409dfbda05daf7d21784fa6ae3678c6d1abb91402752bd",
+      "target": "level1.mp3"
+    },
+    "symlink_chain/level3.mp3": {
+      "mode": "120000",
+      "sha256": "edfde60215a1578d35cb3430d9ac5f62681a0c09cf2ec2e783c9f819db848bc4",
+      "target": "level2.mp3"
+    },
+    "test-enhanced.lrc": {
+      "mode": "100644",
+      "sha256": "386a0ff16c601c8a7d3a944995f2970a73bdea2793076233aa1f958e534cd8e8"
+    },
+    "test-instrumental.yaml": {
+      "mode": "100644",
+      "sha256": "5cfbdac340caa70f24f3d1a535b893200964d4f188e7ebcafe2e1cd948c1eee6"
+    },
+    "test-metadata.ttml": {
+      "mode": "100644",
+      "sha256": "24f17f5d3956615ab16e78ba129628207eb96edc66b903d9fd9b86738a743dfb"
+    },
+    "test-overlapping.yaml": {
+      "mode": "100644",
+      "sha256": "6a11277cbce6e5beb64a91b4bccd43839cd450dbc70856ab95cdf32ddd68f890"
+    },
+    "test-words.yaml": {
+      "mode": "100644",
+      "sha256": "78390dfb2ea54b4b6d118c3a6659feb23c3f4500247893eef443ec73e3ce202c"
+    },
+    "test.aiff": {
+      "mode": "100644",
+      "sha256": "207d97357f534945755ef39701fe30c6ab19476ca6270bcbd211085fa9f82d26"
+    },
+    "test.elrc": {
+      "mode": "100644",
+      "sha256": "1f3eb7bbf49fe204d4a031895750a30aa8b315710a9458f996a57dd706a5e895"
+    },
+    "test.flac": {
+      "mode": "100644",
+      "sha256": "dcca4a53a3722aec83bc5d43ee7964664a0c3b6cc097caf5a57467a11ce55997"
+    },
+    "test.lrc": {
+      "mode": "100644",
+      "sha256": "b6ec73b0f6a1da5d8ed0049152e436cab98643079df86b32c879f8d857904ebf"
+    },
+    "test.m4a": {
+      "mode": "100644",
+      "sha256": "53542efbec076fbe1052f464479f6d71258ab76bb14d2bef66ed7f64d3259f53"
+    },
+    "test.mp3": {
+      "mode": "100644",
+      "sha256": "0fc8729f1bf77eb22f6f19a814a8bd9349bfa12bd70551f25c494a6e0ba73c2d"
+    },
+    "test.ogg": {
+      "mode": "100644",
+      "sha256": "37e3de39866b1d72daf645c51e049e6d8dc33e224e32579c3242d2006f54b294"
+    },
+    "test.opus": {
+      "mode": "100644",
+      "sha256": "1f238972cd5e44d799769dd546616a82a0c0587855af5687576a4cd023f469db"
+    },
+    "test.srt": {
+      "mode": "100644",
+      "sha256": "dfe820e1d514bb78ee83cd96dd2ff5135a4fee4e45f411fdbc71000afa5fbae9"
+    },
+    "test.tak": {
+      "mode": "100644",
+      "sha256": "2e70b798554440830749e1672ab40ee70322e633c251ff144510fdb439401068"
+    },
+    "test.ttml": {
+      "mode": "100644",
+      "sha256": "4f3d19ccff3c3dab63ada3cde198f4629ad9ccbcf6ad66998edd81fb48b0ebbd"
+    },
+    "test.txt": {
+      "mode": "100644",
+      "sha256": "93a08bd10cd367bf83f12ba6590fcaef2f8deec8a47ce4ce88a15c7dda325ffa"
+    },
+    "test.wav": {
+      "mode": "100644",
+      "sha256": "ca965c218103aa63a2d49abb0dfa915278a0ba05c5c1af09b395d9d62ca098a5"
+    },
+    "test.wma": {
+      "mode": "100644",
+      "sha256": "14b49c8c1f1d1220213a0ad297ee23855a7616472ba4abb87f0606ac2612b3ca"
+    },
+    "test.wv": {
+      "mode": "100644",
+      "sha256": "4028716036a5d7d6b53743146ce34a3534dbc9d1c72dc9b9c7720e52ac5e9d01"
+    },
+    "test.yaml": {
+      "mode": "100644",
+      "sha256": "662b1bb7ddc1ea61050f396960f7370a8d5ae7cdb062aff4c1e506dc27452aaa"
+    },
+    "zero_replaygain.mp3": {
+      "mode": "100644",
+      "sha256": "bc4f2322a499984989341d13fa073a50d4bbf7f86c3d803429c4b166f88ef02c"
+    }
+  },
+  "revision": "101145742f4762164202cb4858c9126258bdc463",
+  "scope": "Optional upstream regression fixtures, fetched separately; not demo or release media",
+  "source": "https://github.com/navidrome/navidrome",
+  "tlsFiles": {
+    "server/testdata/test_cert.pem": {
+      "sha256": "e7e063f0e7b9ba6a3165ed6acbbdbe55b673b69026c7f1b9ad96e9738fbd2c79"
+    },
+    "server/testdata/test_cert_encrypted.pem": {
+      "sha256": "f11727e761cf7bf6bed5a46e3d733d088b6e382eef5ab34b8b11f60c46202f8e"
+    },
+    "server/testdata/test_key.pem": {
+      "sha256": "e56808917c99e240e5b57ff4c4dd6a549ffa12723881b2b7712d60b9029c82da"
+    },
+    "server/testdata/test_key_encrypted.pem": {
+      "sha256": "99e72ddb0dc0ec59a80051e8b2dba4c3403c9f339fe92e6d0ef9edb646c7d59a"
+    },
+    "server/testdata/test_key_encrypted_legacy.pem": {
+      "sha256": "466b8090865d6629cb34c36d16c472d1117a8431f18687230719a5881f7b2b05"
+    }
+  }
+}

@@ -1,0 +1,4 @@
+# Retain third-party license notices byte for byte, including original whitespace.
+integrations/licenses/**/*.LICENSE -text whitespace=-blank-at-eol,-blank-at-eof
+docs/release/third-party-npm-licenses.txt -text whitespace=-blank-at-eol,-blank-at-eof
+ui/public/fonts/OFL.txt -text whitespace=-blank-at-eol,-blank-at-eof

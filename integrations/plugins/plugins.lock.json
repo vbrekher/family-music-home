@@ -1,0 +1,69 @@
+[
+  {
+    "name": "nd-lyrics.ndp",
+    "version": "v8.1.0",
+    "source": "https://github.com/J0R6IT0/navidrome-lyrics-plugin/releases/download/v8.1.0/nd-lyrics.ndp",
+    "upstreamSHA256": "29dd571ba0d4bb756e62c0d5c594a2d7e7c9ccec2950f3b027bd64c73c605715",
+    "stagedSHA256": "da076c7691697908c355135b9161f5b5775f36750c8c2861c7da1a278678f78d",
+    "wasmSHA256": "7970984dc1695f4cab07a44098e7b57f609acece57a5644153c6016f34fe06d0",
+    "permissions": {
+      "http": {
+        "reason": "To fetch lyrics from the internet. All hosts required for custom URLs.",
+        "requiredHosts": [
+          "lrclib.net"
+        ]
+      },
+      "library": {
+        "reason": "Read library metadata only; no filesystem or sidecar access",
+        "filesystem": false
+      },
+      "cache": {
+        "reason": "To cache transient provider state (Apple Music dev token, storefront, provider rotation)."
+      },
+      "kvstore": {
+        "reason": "To cache lyrics persistently across restarts.",
+        "maxSize": "20MB"
+      }
+    }
+  },
+  {
+    "name": "apple-music.ndp",
+    "version": "v0.2.0",
+    "source": "https://github.com/navidrome/apple-music-plugin/releases/download/v0.2.0/apple-music.ndp",
+    "upstreamSHA256": "3682751e72caa5cc46b3f7ab70de70ea026f0a38a47f780b2d2b4922ed0ad154",
+    "stagedSHA256": "9ae9358570078daf2e668f5e19314192a477fca03562725a2f4af115c5a767d6",
+    "wasmSHA256": "552bc21043045b50e726e26daa3471ae3800f49fa3a8f5f049ae822f569aaf47",
+    "permissions": {
+      "http": {
+        "reason": "Fetch artist metadata from iTunes API and Apple Music web pages",
+        "requiredHosts": [
+          "itunes.apple.com",
+          "music.apple.com"
+        ]
+      },
+      "kvstore": {
+        "reason": "Cache artist ID mappings and scraped metadata to reduce API calls",
+        "maxSize": "10MB"
+      }
+    }
+  },
+  {
+    "name": "coverartarchive.ndp",
+    "version": "v1.0.0",
+    "source": "https://github.com/sunsetroute1/navidrome-coverartarchive-plugin/releases/download/v1.0.0/coverartarchive.ndp",
+    "upstreamSHA256": "3b0ec9055ce7825ebecf70f129e69aafc2d3f1398376ce7a7d390e31e72046cb",
+    "stagedSHA256": "988428bcf532cba90c3efe0df1b904916a699e1c9d37c19c9bfed3e2e65eda22",
+    "wasmSHA256": "61db868808a0f9b3cacdcf58fbbf427164fd47d00b56ada968cfbdfdfbcc78b3",
+    "permissions": {
+      "http": {
+        "reason": "Look up releases on MusicBrainz and fetch album cover art from the Cover Art Archive",
+        "requiredHosts": [
+          "musicbrainz.org",
+          "coverartarchive.org",
+          "archive.org",
+          "*.archive.org"
+        ]
+      }
+    }
+  }
+]

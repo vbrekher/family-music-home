@@ -1,0 +1,211 @@
+[
+  {
+    "name": "Family Home Dashboard",
+    "implementation": "server/nativeapi/family_home.go",
+    "role": "Each user owns their Home preferences. Shared entries and music remain subject to current library permissions.",
+    "path": "/family",
+    "frontend": "ui/src/family/FamilyHome.jsx",
+    "config": "Per-user preferences or explicit form settings",
+    "tests": [
+      "core/family/",
+      "server/nativeapi/",
+      "ui/src/family/"
+    ],
+    "local_status": "INTEGRATION_PASS",
+    "live_status": "NOT_RUN",
+    "docs_en": "docs/en/features/home.md",
+    "docs_ru": "docs/ru/features/home.md",
+    "screenshot": "docs/assets/home-after.png",
+    "evidence": "191 guarded local HTTP checks across four acceptance suites; Go and UI regression suites. Production release candidate not deployed."
+  },
+  {
+    "name": "Family Shelves",
+    "implementation": "core/family/store.go",
+    "role": "Only the owner edits the shelf. A shared recipient can read allowed content; an administrator does not gain access to another adult’s private shelf.",
+    "path": "/family/shelves",
+    "frontend": "ui/src/family/Shelves.jsx",
+    "config": "Per-user preferences or explicit form settings",
+    "tests": [
+      "core/family/",
+      "server/nativeapi/",
+      "ui/src/family/"
+    ],
+    "local_status": "INTEGRATION_PASS",
+    "live_status": "NOT_RUN",
+    "docs_en": "docs/en/features/shelves.md",
+    "docs_ru": "docs/ru/features/shelves.md",
+    "screenshot": "docs/assets/shelves.png",
+    "evidence": "191 guarded local HTTP checks across four acceptance suites; Go and UI regression suites. Production release candidate not deployed."
+  },
+  {
+    "name": "Family Music Time Capsule",
+    "implementation": "core/family/store.go",
+    "role": "Private by default; explicit recipients and current library access are checked again when reading attachments.",
+    "path": "/family/capsules",
+    "frontend": "ui/src/family/Journal.jsx",
+    "config": "Per-user preferences or explicit form settings",
+    "tests": [
+      "core/family/",
+      "server/nativeapi/",
+      "ui/src/family/"
+    ],
+    "local_status": "INTEGRATION_PASS",
+    "live_status": "NOT_RUN",
+    "docs_en": "docs/en/features/capsules.md",
+    "docs_ru": "docs/ru/features/capsules.md",
+    "screenshot": "docs/assets/capsules.png",
+    "evidence": "191 guarded local HTTP checks across four acceptance suites; Go and UI regression suites. Production release candidate not deployed."
+  },
+  {
+    "name": "Music Letters",
+    "implementation": "core/family/letters.go",
+    "role": "Drafts are private to their author. Scheduled letters are hidden from recipients until delivery. Recipient access and attachment authorization are enforced on the server.",
+    "path": "/family/letters",
+    "frontend": "ui/src/family/Journal.jsx",
+    "config": "Per-user preferences or explicit form settings",
+    "tests": [
+      "core/family/",
+      "server/nativeapi/",
+      "ui/src/family/"
+    ],
+    "local_status": "INTEGRATION_PASS",
+    "live_status": "NOT_RUN",
+    "docs_en": "docs/en/features/letters.md",
+    "docs_ru": "docs/ru/features/letters.md",
+    "screenshot": "docs/assets/letters.png",
+    "evidence": "191 guarded local HTTP checks across four acceptance suites; Go and UI regression suites. Production release candidate not deployed."
+  },
+  {
+    "name": "Family Music Requests",
+    "implementation": "core/family/requests.go",
+    "role": "Drafts remain private. Submitted requests go to server-derived administrator recipients; regular members cannot perform administrator status transitions.",
+    "path": "/family/requests",
+    "frontend": "ui/src/family/Requests.jsx",
+    "config": "Per-user preferences or explicit form settings",
+    "tests": [
+      "core/family/",
+      "server/nativeapi/",
+      "ui/src/family/"
+    ],
+    "local_status": "INTEGRATION_PASS",
+    "live_status": "NOT_RUN",
+    "docs_en": "docs/en/features/requests.md",
+    "docs_ru": "docs/ru/features/requests.md",
+    "screenshot": "docs/assets/requests.png",
+    "evidence": "191 guarded local HTTP checks across four acceptance suites; Go and UI regression suites. Production release candidate not deployed."
+  },
+  {
+    "name": "Forgotten Albums",
+    "implementation": "server/nativeapi/family_home.go",
+    "role": "Suggestions and dismissals are personal and filtered by current library permissions.",
+    "path": "/family",
+    "frontend": "ui/src/family/FamilyHome.jsx",
+    "config": "Per-user preferences or explicit form settings",
+    "tests": [
+      "core/family/",
+      "server/nativeapi/",
+      "ui/src/family/"
+    ],
+    "local_status": "INTEGRATION_PASS",
+    "live_status": "NOT_RUN",
+    "docs_en": "docs/en/features/forgotten.md",
+    "docs_ru": "docs/ru/features/forgotten.md",
+    "screenshot": "docs/assets/forgotten.png",
+    "evidence": "191 guarded local HTTP checks across four acceptance suites; Go and UI regression suites. Production release candidate not deployed."
+  },
+  {
+    "name": "Music Quality Passport",
+    "implementation": "server/nativeapi/family_home.go",
+    "role": "Only currently authorized catalog references resolve. Secret source paths, credentials and remote object URLs are not part of the passport.",
+    "path": "/family/passport",
+    "frontend": "ui/src/family/Passport.jsx",
+    "config": "Per-user preferences or explicit form settings",
+    "tests": [
+      "core/family/",
+      "server/nativeapi/",
+      "ui/src/family/"
+    ],
+    "local_status": "INTEGRATION_PASS",
+    "live_status": "NOT_RUN",
+    "docs_en": "docs/en/features/passport.md",
+    "docs_ru": "docs/ru/features/passport.md",
+    "screenshot": "docs/assets/passport.png",
+    "evidence": "191 guarded local HTTP checks across four acceptance suites; Go and UI regression suites. Production release candidate not deployed."
+  },
+  {
+    "name": "Library Doctor",
+    "implementation": "core/family/doctor_jobs.go",
+    "role": "Administrator only. Protected child accounts cannot access diagnostic jobs or diagnostic audio leases.",
+    "path": "/family/doctor",
+    "frontend": "ui/src/family/Doctor.jsx",
+    "config": "Per-user preferences or explicit form settings",
+    "tests": [
+      "core/family/",
+      "server/nativeapi/",
+      "ui/src/family/"
+    ],
+    "local_status": "INTEGRATION_PASS",
+    "live_status": "NOT_RUN",
+    "docs_en": "docs/en/features/doctor.md",
+    "docs_ru": "docs/ru/features/doctor.md",
+    "screenshot": "docs/assets/doctor.png",
+    "evidence": "191 guarded local HTTP checks across four acceptance suites; Go and UI regression suites. Production release candidate not deployed."
+  },
+  {
+    "name": "Version Collector",
+    "implementation": "core/family/versions.go",
+    "role": "Catalog permissions are rechecked. Preferences are per user and cannot grant access to an otherwise private library.",
+    "path": "/family/versions",
+    "frontend": "ui/src/family/Versions.jsx",
+    "config": "Per-user preferences or explicit form settings",
+    "tests": [
+      "core/family/",
+      "server/nativeapi/",
+      "ui/src/family/"
+    ],
+    "local_status": "INTEGRATION_PASS",
+    "live_status": "NOT_RUN",
+    "docs_en": "docs/en/features/versions.md",
+    "docs_ru": "docs/ru/features/versions.md",
+    "screenshot": "docs/assets/versions.png",
+    "evidence": "191 guarded local HTTP checks across four acceptance suites; Go and UI regression suites. Production release candidate not deployed."
+  },
+  {
+    "name": "Kids Music World",
+    "implementation": "core/family/children.go",
+    "role": "No child account is created automatically. Library access and server route guards apply even when calling APIs directly. Sharing with other adults is off unless explicitly enabled by the parent.",
+    "path": "/family/children",
+    "frontend": "ui/src/family/Children.jsx",
+    "config": "Per-user preferences or explicit form settings",
+    "tests": [
+      "core/family/",
+      "server/nativeapi/",
+      "ui/src/family/"
+    ],
+    "local_status": "INTEGRATION_PASS",
+    "live_status": "NOT_RUN",
+    "docs_en": "docs/en/features/kids.md",
+    "docs_ru": "docs/ru/features/kids.md",
+    "screenshot": "docs/assets/children.png",
+    "evidence": "191 guarded local HTTP checks across four acceptance suites; Go and UI regression suites. Production release candidate not deployed."
+  },
+  {
+    "name": "Family Legacy Export",
+    "implementation": "core/family/legacy.go",
+    "role": "An administrator cannot export another adult’s private records. Permissions are checked again at download and attachment reads. The link belongs to the preparing account.",
+    "path": "/family/legacy",
+    "frontend": "ui/src/family/Legacy.jsx",
+    "config": "Per-user preferences or explicit form settings",
+    "tests": [
+      "core/family/",
+      "server/nativeapi/",
+      "ui/src/family/"
+    ],
+    "local_status": "INTEGRATION_PASS",
+    "live_status": "NOT_RUN",
+    "docs_en": "docs/en/features/legacy.md",
+    "docs_ru": "docs/ru/features/legacy.md",
+    "screenshot": "docs/assets/legacy.png",
+    "evidence": "191 guarded local HTTP checks across four acceptance suites; Go and UI regression suites. Production release candidate not deployed."
+  }
+]

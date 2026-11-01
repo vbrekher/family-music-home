@@ -1,0 +1,20 @@
+.git
+.env
+.env.*
+!.env.example
+**/node_modules
+**/__pycache__
+**/*.db
+**/*.db-*
+**/*.enc
+binaries
+
+# Local publication credentials and runtime evidence
+.private
+.docker-auth
+
+# Generated test binaries and private operations evidence never enter build context.
+plugins/testdata/*.wasm
+plugins/testdata/*.ndp
+plugins/testdata/.wazero-cache
+docs/operations/acceptance

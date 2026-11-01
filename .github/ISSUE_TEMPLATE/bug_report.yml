@@ -1,0 +1,26 @@
+name: Bug report
+description: Report a reproducible Family Music Home problem
+title: "[Bug] "
+body:
+  - type: markdown
+    attributes:
+      value: "Use synthetic data. Do not include secrets, private server addresses, music, databases or family screenshots. Security problems: read SECURITY.md."
+  - type: input
+    id: version
+    attributes:
+      label: Release and environment
+      description: Version, browser, OS and deployment type; no private endpoint.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction
+      description: Minimal steps, expected result and actual result.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Safe evidence
+      description: Relevant redacted errors or synthetic screenshots only.

@@ -1,0 +1,632 @@
+{
+  "scope": "Source inventory and observed local acceptance; production and physical devices are separate gates",
+  "features": [
+    {
+      "name": "Family Home Dashboard",
+      "implementation": "server/nativeapi/family_home.go",
+      "role": "Each user owns their Home preferences. Shared entries and music remain subject to current library permissions.",
+      "path": "/family",
+      "frontend": "ui/src/family/FamilyHome.jsx",
+      "config": "Per-user preferences or explicit form settings",
+      "tests": [
+        "core/family/",
+        "server/nativeapi/",
+        "ui/src/family/"
+      ],
+      "local_status": "INTEGRATION_PASS",
+      "live_status": "NOT_RUN",
+      "docs_en": "docs/en/features/home.md",
+      "docs_ru": "docs/ru/features/home.md",
+      "screenshot": "docs/assets/home-after.png",
+      "evidence": "191 guarded local HTTP checks across four acceptance suites; Go and UI regression suites. Production release candidate not deployed."
+    },
+    {
+      "name": "Family Shelves",
+      "implementation": "core/family/store.go",
+      "role": "Only the owner edits the shelf. A shared recipient can read allowed content; an administrator does not gain access to another adult’s private shelf.",
+      "path": "/family/shelves",
+      "frontend": "ui/src/family/Shelves.jsx",
+      "config": "Per-user preferences or explicit form settings",
+      "tests": [
+        "core/family/",
+        "server/nativeapi/",
+        "ui/src/family/"
+      ],
+      "local_status": "INTEGRATION_PASS",
+      "live_status": "NOT_RUN",
+      "docs_en": "docs/en/features/shelves.md",
+      "docs_ru": "docs/ru/features/shelves.md",
+      "screenshot": "docs/assets/shelves.png",
+      "evidence": "191 guarded local HTTP checks across four acceptance suites; Go and UI regression suites. Production release candidate not deployed."
+    },
+    {
+      "name": "Family Music Time Capsule",
+      "implementation": "core/family/store.go",
+      "role": "Private by default; explicit recipients and current library access are checked again when reading attachments.",
+      "path": "/family/capsules",
+      "frontend": "ui/src/family/Journal.jsx",
+      "config": "Per-user preferences or explicit form settings",
+      "tests": [
+        "core/family/",
+        "server/nativeapi/",
+        "ui/src/family/"
+      ],
+      "local_status": "INTEGRATION_PASS",
+      "live_status": "NOT_RUN",
+      "docs_en": "docs/en/features/capsules.md",
+      "docs_ru": "docs/ru/features/capsules.md",
+      "screenshot": "docs/assets/capsules.png",
+      "evidence": "191 guarded local HTTP checks across four acceptance suites; Go and UI regression suites. Production release candidate not deployed."
+    },
+    {
+      "name": "Music Letters",
+      "implementation": "core/family/letters.go",
+      "role": "Drafts are private to their author. Scheduled letters are hidden from recipients until delivery. Recipient access and attachment authorization are enforced on the server.",
+      "path": "/family/letters",
+      "frontend": "ui/src/family/Journal.jsx",
+      "config": "Per-user preferences or explicit form settings",
+      "tests": [
+        "core/family/",
+        "server/nativeapi/",
+        "ui/src/family/"
+      ],
+      "local_status": "INTEGRATION_PASS",
+      "live_status": "NOT_RUN",
+      "docs_en": "docs/en/features/letters.md",
+      "docs_ru": "docs/ru/features/letters.md",
+      "screenshot": "docs/assets/letters.png",
+      "evidence": "191 guarded local HTTP checks across four acceptance suites; Go and UI regression suites. Production release candidate not deployed."
+    },
+    {
+      "name": "Family Music Requests",
+      "implementation": "core/family/requests.go",
+      "role": "Drafts remain private. Submitted requests go to server-derived administrator recipients; regular members cannot perform administrator status transitions.",
+      "path": "/family/requests",
+      "frontend": "ui/src/family/Requests.jsx",
+      "config": "Per-user preferences or explicit form settings",
+      "tests": [
+        "core/family/",
+        "server/nativeapi/",
+        "ui/src/family/"
+      ],
+      "local_status": "INTEGRATION_PASS",
+      "live_status": "NOT_RUN",
+      "docs_en": "docs/en/features/requests.md",
+      "docs_ru": "docs/ru/features/requests.md",
+      "screenshot": "docs/assets/requests.png",
+      "evidence": "191 guarded local HTTP checks across four acceptance suites; Go and UI regression suites. Production release candidate not deployed."
+    },
+    {
+      "name": "Forgotten Albums",
+      "implementation": "server/nativeapi/family_home.go",
+      "role": "Suggestions and dismissals are personal and filtered by current library permissions.",
+      "path": "/family",
+      "frontend": "ui/src/family/FamilyHome.jsx",
+      "config": "Per-user preferences or explicit form settings",
+      "tests": [
+        "core/family/",
+        "server/nativeapi/",
+        "ui/src/family/"
+      ],
+      "local_status": "INTEGRATION_PASS",
+      "live_status": "NOT_RUN",
+      "docs_en": "docs/en/features/forgotten.md",
+      "docs_ru": "docs/ru/features/forgotten.md",
+      "screenshot": "docs/assets/forgotten.png",
+      "evidence": "191 guarded local HTTP checks across four acceptance suites; Go and UI regression suites. Production release candidate not deployed."
+    },
+    {
+      "name": "Music Quality Passport",
+      "implementation": "server/nativeapi/family_home.go",
+      "role": "Only currently authorized catalog references resolve. Secret source paths, credentials and remote object URLs are not part of the passport.",
+      "path": "/family/passport",
+      "frontend": "ui/src/family/Passport.jsx",
+      "config": "Per-user preferences or explicit form settings",
+      "tests": [
+        "core/family/",
+        "server/nativeapi/",
+        "ui/src/family/"
+      ],
+      "local_status": "INTEGRATION_PASS",
+      "live_status": "NOT_RUN",
+      "docs_en": "docs/en/features/passport.md",
+      "docs_ru": "docs/ru/features/passport.md",
+      "screenshot": "docs/assets/passport.png",
+      "evidence": "191 guarded local HTTP checks across four acceptance suites; Go and UI regression suites. Production release candidate not deployed."
+    },
+    {
+      "name": "Library Doctor",
+      "implementation": "core/family/doctor_jobs.go",
+      "role": "Administrator only. Protected child accounts cannot access diagnostic jobs or diagnostic audio leases.",
+      "path": "/family/doctor",
+      "frontend": "ui/src/family/Doctor.jsx",
+      "config": "Per-user preferences or explicit form settings",
+      "tests": [
+        "core/family/",
+        "server/nativeapi/",
+        "ui/src/family/"
+      ],
+      "local_status": "INTEGRATION_PASS",
+      "live_status": "NOT_RUN",
+      "docs_en": "docs/en/features/doctor.md",
+      "docs_ru": "docs/ru/features/doctor.md",
+      "screenshot": "docs/assets/doctor.png",
+      "evidence": "191 guarded local HTTP checks across four acceptance suites; Go and UI regression suites. Production release candidate not deployed."
+    },
+    {
+      "name": "Version Collector",
+      "implementation": "core/family/versions.go",
+      "role": "Catalog permissions are rechecked. Preferences are per user and cannot grant access to an otherwise private library.",
+      "path": "/family/versions",
+      "frontend": "ui/src/family/Versions.jsx",
+      "config": "Per-user preferences or explicit form settings",
+      "tests": [
+        "core/family/",
+        "server/nativeapi/",
+        "ui/src/family/"
+      ],
+      "local_status": "INTEGRATION_PASS",
+      "live_status": "NOT_RUN",
+      "docs_en": "docs/en/features/versions.md",
+      "docs_ru": "docs/ru/features/versions.md",
+      "screenshot": "docs/assets/versions.png",
+      "evidence": "191 guarded local HTTP checks across four acceptance suites; Go and UI regression suites. Production release candidate not deployed."
+    },
+    {
+      "name": "Kids Music World",
+      "implementation": "core/family/children.go",
+      "role": "No child account is created automatically. Library access and server route guards apply even when calling APIs directly. Sharing with other adults is off unless explicitly enabled by the parent.",
+      "path": "/family/children",
+      "frontend": "ui/src/family/Children.jsx",
+      "config": "Per-user preferences or explicit form settings",
+      "tests": [
+        "core/family/",
+        "server/nativeapi/",
+        "ui/src/family/"
+      ],
+      "local_status": "INTEGRATION_PASS",
+      "live_status": "NOT_RUN",
+      "docs_en": "docs/en/features/kids.md",
+      "docs_ru": "docs/ru/features/kids.md",
+      "screenshot": "docs/assets/children.png",
+      "evidence": "191 guarded local HTTP checks across four acceptance suites; Go and UI regression suites. Production release candidate not deployed."
+    },
+    {
+      "name": "Family Legacy Export",
+      "implementation": "core/family/legacy.go",
+      "role": "An administrator cannot export another adult’s private records. Permissions are checked again at download and attachment reads. The link belongs to the preparing account.",
+      "path": "/family/legacy",
+      "frontend": "ui/src/family/Legacy.jsx",
+      "config": "Per-user preferences or explicit form settings",
+      "tests": [
+        "core/family/",
+        "server/nativeapi/",
+        "ui/src/family/"
+      ],
+      "local_status": "INTEGRATION_PASS",
+      "live_status": "NOT_RUN",
+      "docs_en": "docs/en/features/legacy.md",
+      "docs_ru": "docs/ru/features/legacy.md",
+      "screenshot": "docs/assets/legacy.png",
+      "evidence": "191 guarded local HTTP checks across four acceptance suites; Go and UI regression suites. Production release candidate not deployed."
+    },
+    {
+      "name": "Music catalog, artists and albums",
+      "implementation": "persistence",
+      "frontend": "ui/src/album",
+      "role": "Library grants; current user",
+      "origin": "Inherited Navidrome",
+      "docs_en": "docs/en/library.md",
+      "docs_ru": "docs/ru/library.md",
+      "tests": [
+        "persistence/album_repository_test.go",
+        "persistence/artist_repository_test.go",
+        "ui/src/album/AlbumDetails.test.jsx"
+      ],
+      "local_status": "SOURCE_AND_REGRESSION_REVIEWED",
+      "live_status": "NOT_RUN",
+      "screenshot": null,
+      "config": "Per-user settings or role-restricted server configuration; see the linked guide"
+    },
+    {
+      "name": "Genres, search, filters and sorting",
+      "implementation": "server/nativeapi",
+      "frontend": "ui/src/artist",
+      "role": "Current library grants",
+      "origin": "Inherited Navidrome",
+      "docs_en": "docs/en/library.md",
+      "docs_ru": "docs/ru/library.md",
+      "tests": [
+        "persistence/genre_repository_test.go",
+        "persistence/sql_search_fts_test.go",
+        "server/subsonic/searching_test.go"
+      ],
+      "local_status": "SOURCE_AND_REGRESSION_REVIEWED",
+      "live_status": "NOT_RUN",
+      "screenshot": null,
+      "config": "Per-user settings or role-restricted server configuration; see the linked guide"
+    },
+    {
+      "name": "Web player and queue",
+      "implementation": "server/subsonic",
+      "frontend": "ui/src/audioplayer",
+      "role": "Current library grants and signed stream authorization",
+      "origin": "Inherited Navidrome",
+      "docs_en": "docs/en/player.md",
+      "docs_ru": "docs/ru/player.md",
+      "tests": [
+        "server/subsonic/media_retrieval_test.go",
+        "persistence/playqueue_repository_test.go",
+        "ui/src/audioplayer/AudioTitle.test.jsx"
+      ],
+      "local_status": "SOURCE_AND_REGRESSION_REVIEWED",
+      "live_status": "NOT_RUN",
+      "screenshot": null,
+      "config": "Per-user settings or role-restricted server configuration; see the linked guide"
+    },
+    {
+      "name": "Playlists and smart playlists",
+      "implementation": "core/playlists",
+      "frontend": "ui/src/playlist",
+      "role": "Playlist ownership/sharing and current library grants",
+      "origin": "Inherited Navidrome",
+      "docs_en": "docs/en/library.md",
+      "docs_ru": "docs/ru/library.md",
+      "tests": [
+        "core/playlists/playlists_test.go",
+        "persistence/smart_playlist_repository_test.go",
+        "ui/src/playlist/PlaylistList.test.jsx"
+      ],
+      "local_status": "SOURCE_AND_REGRESSION_REVIEWED",
+      "live_status": "NOT_RUN",
+      "screenshot": null,
+      "config": "Per-user settings or role-restricted server configuration; see the linked guide"
+    },
+    {
+      "name": "Favorites and ratings",
+      "implementation": "persistence",
+      "frontend": "ui/src/common/RatingField.jsx",
+      "role": "Personal annotations",
+      "origin": "Inherited Navidrome",
+      "docs_en": "docs/en/library.md",
+      "docs_ru": "docs/ru/library.md",
+      "tests": [
+        "server/subsonic/media_annotation_test.go",
+        "persistence/sql_annotations_test.go"
+      ],
+      "local_status": "SOURCE_AND_REGRESSION_REVIEWED",
+      "live_status": "NOT_RUN",
+      "screenshot": null,
+      "config": "Per-user settings or role-restricted server configuration; see the linked guide"
+    },
+    {
+      "name": "Cover art and metadata",
+      "implementation": "core/artwork",
+      "frontend": "ui/src/album/AlbumDetails.jsx",
+      "role": "Current library grants",
+      "origin": "Inherited Navidrome",
+      "docs_en": "docs/en/library.md",
+      "docs_ru": "docs/ru/library.md",
+      "tests": [
+        "core/artwork/artwork_test.go",
+        "persistence/artwork_repository_test.go"
+      ],
+      "local_status": "SOURCE_AND_REGRESSION_REVIEWED",
+      "live_status": "NOT_RUN",
+      "screenshot": null,
+      "config": "Per-user settings or role-restricted server configuration; see the linked guide"
+    },
+    {
+      "name": "Formats and transcoding",
+      "implementation": "core/ffmpeg",
+      "frontend": "ui/src/dialogs/useTranscodingOptions.jsx",
+      "role": "Signed tokens, profile selection and current library grants",
+      "origin": "Inherited Navidrome with child stream hardening",
+      "docs_en": "docs/en/player.md",
+      "docs_ru": "docs/ru/player.md",
+      "tests": [
+        "server/subsonic/transcode_test.go",
+        "core/ffmpeg/ffmpeg_test.go",
+        "ui/src/dialogs/useTranscodingOptions.test.jsx"
+      ],
+      "local_status": "SOURCE_AND_REGRESSION_REVIEWED",
+      "live_status": "NOT_RUN",
+      "screenshot": null,
+      "config": "Per-user settings or role-restricted server configuration; see the linked guide"
+    },
+    {
+      "name": "OpenSubsonic",
+      "implementation": "server/subsonic",
+      "frontend": "server/subsonic",
+      "role": "Authenticated client; current library and child policies",
+      "origin": "Inherited Navidrome",
+      "docs_en": "docs/en/player.md",
+      "docs_ru": "docs/ru/player.md",
+      "tests": [
+        "server/subsonic/opensubsonic_test.go",
+        "server/subsonic/e2e/subsonic_stream_test.go"
+      ],
+      "local_status": "SOURCE_AND_REGRESSION_REVIEWED",
+      "live_status": "NOT_RUN",
+      "screenshot": null,
+      "config": "Per-user settings or role-restricted server configuration; see the linked guide"
+    },
+    {
+      "name": "Users and explicit library grants",
+      "implementation": "core/library.go",
+      "frontend": "ui/src/user",
+      "role": "Administrator; public users start without implicit library grants",
+      "origin": "Inherited Navidrome with fork authorization changes",
+      "docs_en": "docs/en/users.md",
+      "docs_ru": "docs/ru/users.md",
+      "tests": [
+        "core/library_test.go",
+        "server/family_setup_test.go",
+        "ui/src/user/userValidation.test.js",
+        "ui/src/common/SelectLibraryInput.test.jsx"
+      ],
+      "local_status": "SOURCE_AND_REGRESSION_REVIEWED",
+      "live_status": "NOT_RUN",
+      "screenshot": null,
+      "config": "Per-user settings or role-restricted server configuration; see the linked guide"
+    },
+    {
+      "name": "Administration and settings",
+      "implementation": "server/nativeapi",
+      "frontend": "ui/src/personal",
+      "role": "Role-limited administrative APIs",
+      "origin": "Inherited Navidrome",
+      "docs_en": "docs/en/users.md",
+      "docs_ru": "docs/ru/users.md",
+      "tests": [
+        "server/nativeapi/config_test.go"
+      ],
+      "local_status": "SOURCE_AND_REGRESSION_REVIEWED",
+      "live_status": "NOT_RUN",
+      "screenshot": null,
+      "config": "Per-user settings or role-restricted server configuration; see the linked guide"
+    },
+    {
+      "name": "Bunny Storage",
+      "implementation": "core/storage/bunny",
+      "frontend": "ui/src/library/ExternalSources.jsx",
+      "role": "Server-side credentials; library grants; add-only companion",
+      "origin": "Fork integration",
+      "docs_en": "docs/en/integrations/bunny.md",
+      "docs_ru": "docs/ru/integrations/bunny.md",
+      "tests": [
+        "adapters/bunny/bunny_test.go",
+        "core/storage/bunny/bunny_test.go",
+        "tests/bunny_ops/test_tools.py"
+      ],
+      "local_status": "SOURCE_AND_REGRESSION_REVIEWED",
+      "live_status": "NOT_RUN",
+      "screenshot": null,
+      "config": "Per-user settings or role-restricted server configuration; see the linked guide"
+    },
+    {
+      "name": "S3-compatible storage",
+      "implementation": "adapters/external/http.go",
+      "frontend": "ui/src/library/ExternalSources.jsx",
+      "role": "Administrator source configuration; user library grants",
+      "origin": "Fork integration",
+      "docs_en": "docs/en/integrations/s3.md",
+      "docs_ru": "docs/ru/integrations/s3.md",
+      "tests": [
+        "adapters/external/protocol_test.go",
+        "adapters/external/proxy_test.go",
+        "scanner/remote_safety_test.go",
+        "core/storage/remote_test.go",
+        "ui/src/library/ExternalSources.test.jsx"
+      ],
+      "local_status": "SOURCE_AND_REGRESSION_REVIEWED",
+      "live_status": "NOT_RUN",
+      "screenshot": null,
+      "config": "ND_EXTERNALSOURCESFILE plus referenced server-side secret variables; explicit network approval and read_only=true"
+    },
+    {
+      "name": "SFTP",
+      "implementation": "adapters/external/sftp.go",
+      "frontend": "ui/src/library/ExternalSources.jsx",
+      "role": "Pinned SSH host key; library grants",
+      "origin": "Fork integration",
+      "docs_en": "docs/en/integrations/sftp.md",
+      "docs_ru": "docs/ru/integrations/sftp.md",
+      "tests": [
+        "adapters/external/protocol_test.go",
+        "adapters/external/proxy_test.go",
+        "scanner/remote_safety_test.go",
+        "core/storage/remote_test.go",
+        "ui/src/library/ExternalSources.test.jsx"
+      ],
+      "local_status": "SOURCE_AND_REGRESSION_REVIEWED",
+      "live_status": "NOT_RUN",
+      "screenshot": null,
+      "config": "ND_EXTERNALSOURCESFILE plus referenced server-side secret variables; explicit network approval and read_only=true"
+    },
+    {
+      "name": "HTTPS WebDAV",
+      "implementation": "adapters/external/http.go",
+      "frontend": "ui/src/library/ExternalSources.jsx",
+      "role": "HTTPS certificate validation; library grants",
+      "origin": "Fork integration",
+      "docs_en": "docs/en/integrations/webdav.md",
+      "docs_ru": "docs/ru/integrations/webdav.md",
+      "tests": [
+        "adapters/external/protocol_test.go",
+        "adapters/external/proxy_test.go",
+        "scanner/remote_safety_test.go",
+        "core/storage/remote_test.go",
+        "ui/src/library/ExternalSources.test.jsx"
+      ],
+      "local_status": "SOURCE_AND_REGRESSION_REVIEWED",
+      "live_status": "NOT_RUN",
+      "screenshot": null,
+      "config": "ND_EXTERNALSOURCESFILE plus referenced server-side secret variables; explicit network approval and read_only=true"
+    },
+    {
+      "name": "NAS connections",
+      "implementation": "adapters/external/http.go",
+      "frontend": "ui/src/library/ExternalSources.jsx",
+      "role": "Connect through supported protocol; no physical NAS acceptance claimed",
+      "origin": "Fork integration",
+      "docs_en": "docs/en/integrations/nas.md",
+      "docs_ru": "docs/ru/integrations/nas.md",
+      "tests": [
+        "adapters/external/protocol_test.go",
+        "adapters/external/proxy_test.go",
+        "scanner/remote_safety_test.go",
+        "core/storage/remote_test.go",
+        "ui/src/library/ExternalSources.test.jsx"
+      ],
+      "local_status": "PROTOCOL_TESTS_ONLY_PHYSICAL_NAS_NOT_RUN",
+      "live_status": "NOT_RUN",
+      "screenshot": null,
+      "config": "ND_EXTERNALSOURCESFILE plus referenced server-side secret variables; explicit network approval and read_only=true"
+    },
+    {
+      "name": "macOS Family Sync",
+      "implementation": "macos/navidrome_family_sync.py",
+      "frontend": "macos/navidrome_family_sync.py",
+      "role": "Per-user Keychain, LaunchAgent and SQLite; remote deletion prohibited",
+      "origin": "Fork companion",
+      "docs_en": "docs/en/integrations/mac-sync.md",
+      "docs_ru": "docs/ru/integrations/mac-sync.md",
+      "tests": [
+        "macos/test_navidrome_family_sync.py"
+      ],
+      "local_status": "MACOS_FUNCTIONAL_PASS_NOTIFICATION_BANNER_NOT_RUN",
+      "live_status": "NOT_RUN",
+      "screenshot": null,
+      "config": "Per-user local config and SQLite state; secrets in macOS Keychain; add-only LaunchAgent"
+    },
+    {
+      "name": "Library Doctor companion",
+      "implementation": "integrations/doctor/analyze.py",
+      "frontend": "macos/navidrome_family_doctor.py",
+      "role": "Explicit bounded job and source budgets; no original media mutation",
+      "origin": "Fork companion",
+      "docs_en": "docs/en/integrations/doctor.md",
+      "docs_ru": "docs/ru/integrations/doctor.md",
+      "tests": [
+        "tests/doctor/test_analyze.py",
+        "tests/doctor/test_companion.py"
+      ],
+      "local_status": "SOURCE_AND_REGRESSION_REVIEWED",
+      "live_status": "NOT_RUN",
+      "screenshot": null,
+      "config": "Per-user settings or role-restricted server configuration; see the linked guide"
+    },
+    {
+      "name": "27 per-user themes",
+      "implementation": "ui/src/themes",
+      "frontend": "ui/src/personal/SelectTheme.jsx",
+      "role": "Personal preference; retained on restart",
+      "origin": "Inherited and additional themes",
+      "docs_en": "docs/en/themes.md",
+      "docs_ru": "docs/ru/themes.md",
+      "tests": [
+        "ui/src/themes/familyThemes.test.js",
+        "ui/src/themes/useCurrentTheme.test.jsx",
+        "server/nativeapi/family_preferences_test.go"
+      ],
+      "local_status": "SOURCE_AND_REGRESSION_REVIEWED",
+      "live_status": "NOT_RUN",
+      "screenshot": null,
+      "config": "Personal > Theme; per-account server preference; ND_DEFAULTTHEME is only a fallback"
+    },
+    {
+      "name": "Lyrics plugin",
+      "implementation": "integrations/plugins/plugins.lock.json",
+      "frontend": "ui/src/plugin",
+      "role": "Optional explicit plugin permissions; OpenSubsonic lyrics support",
+      "origin": "Third-party MIT plugin",
+      "docs_en": "docs/en/plugins/lyrics.md",
+      "docs_ru": "docs/ru/plugins/lyrics.md",
+      "tests": [
+        "plugins/host_httpclient_test.go",
+        "plugins/family_policy_test.go",
+        "plugins/manager_loader_test.go",
+        "plugins/lyrics_adapter_test.go"
+      ],
+      "local_status": "SOURCE_AND_REGRESSION_REVIEWED",
+      "live_status": "NOT_RUN",
+      "screenshot": null,
+      "config": "Explicit package capability approval; ND_ENABLEFAMILYMETADATAPLUGINS, ND_AGENTS and ND_LYRICSPRIORITY; pinned lockfile"
+    },
+    {
+      "name": "Apple Music metadata plugin",
+      "implementation": "integrations/plugins/plugins.lock.json",
+      "frontend": "ui/src/plugin",
+      "role": "Optional explicit plugin permissions and outbound endpoints",
+      "origin": "Third-party GPLv3 plugin",
+      "docs_en": "docs/en/plugins/apple-music.md",
+      "docs_ru": "docs/ru/plugins/apple-music.md",
+      "tests": [
+        "plugins/host_httpclient_test.go",
+        "plugins/family_policy_test.go",
+        "plugins/manager_loader_test.go",
+        "plugins/metadata_agent_test.go"
+      ],
+      "local_status": "SOURCE_AND_REGRESSION_REVIEWED",
+      "live_status": "NOT_RUN",
+      "screenshot": null,
+      "config": "Explicit package capability approval; ND_ENABLEFAMILYMETADATAPLUGINS, ND_AGENTS and ND_LYRICSPRIORITY; pinned lockfile"
+    },
+    {
+      "name": "Cover Art Archive plugin",
+      "implementation": "integrations/plugins/plugins.lock.json",
+      "frontend": "ui/src/plugin",
+      "role": "Optional explicit plugin permissions and outbound endpoints",
+      "origin": "Third-party MIT plugin",
+      "docs_en": "docs/en/plugins/cover-art.md",
+      "docs_ru": "docs/ru/plugins/cover-art.md",
+      "tests": [
+        "plugins/host_httpclient_test.go",
+        "plugins/family_policy_test.go",
+        "plugins/manager_loader_test.go",
+        "plugins/metadata_agent_test.go"
+      ],
+      "local_status": "SOURCE_AND_REGRESSION_REVIEWED",
+      "live_status": "NOT_RUN",
+      "screenshot": null,
+      "config": "Explicit package capability approval; ND_ENABLEFAMILYMETADATAPLUGINS, ND_AGENTS and ND_LYRICSPRIORITY; pinned lockfile"
+    },
+    {
+      "name": "Encrypted backup and full restore",
+      "implementation": "integrations/bunny/full_backup.py",
+      "frontend": "integrations/bunny/full_backup.py",
+      "role": "Operator-only AES-GCM; stopped complete volume; separate secrets",
+      "origin": "Fork integration",
+      "docs_en": "docs/en/backups.md",
+      "docs_ru": "docs/ru/backups.md",
+      "tests": [
+        "tests/bunny_ops/test_full_backup.py",
+        "tests/bunny_ops/test_family_backup.py",
+        "tests/selfhost_acceptance.py"
+      ],
+      "local_status": "SOURCE_AND_REGRESSION_REVIEWED",
+      "live_status": "NOT_RUN",
+      "screenshot": null,
+      "config": "Per-user settings or role-restricted server configuration; see the linked guide"
+    },
+    {
+      "name": "Protected first-run setup",
+      "implementation": "server/family_setup.go",
+      "frontend": "ui/src/layout/Login.jsx",
+      "role": "One-time setup token and serialized first administrator creation",
+      "origin": "Fork security",
+      "docs_en": "docs/en/quickstart.md",
+      "docs_ru": "docs/ru/quickstart.md",
+      "tests": [
+        "server/family_setup_test.go",
+        "tests/test_selfhost.py",
+        "tests/selfhost_acceptance.py"
+      ],
+      "local_status": "SOURCE_AND_REGRESSION_REVIEWED",
+      "live_status": "NOT_RUN",
+      "screenshot": null,
+      "config": "PUBLIC_SELF_HOST mode, one-time /data/setup-token or operator-supplied FMH_SETUP_TOKEN"
+    }
+  ]
+}

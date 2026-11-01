@@ -1,0 +1,16 @@
+services:
+  music:
+    build:
+      context: .
+      dockerfile: Dockerfile.family
+    platform: linux/amd64
+    ports:
+      - "127.0.0.1:4533:4533"
+    volumes:
+      - family-data:/data
+      - ${FMH_MUSIC_DIR:?Set FMH_MUSIC_DIR to your music folder}:/music:ro
+    restart: unless-stopped
+    mem_limit: 1g
+    cpus: 2
+volumes:
+  family-data:

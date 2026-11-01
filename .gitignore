@@ -1,0 +1,70 @@
+.DS_Store
+.idea
+.vscode
+.envrc
+/navidrome
+/iTunes*.xml
+/tmp
+/bin
+data/*
+vendor/*/
+wiki
+TODO.md
+var
+navidrome.toml
+!release/linux/navidrome.toml
+master.zip
+testDB
+cache/*
+*.swp
+coverage.out
+dist
+music
+music.old
+*.db*
+.gitinfo
+docker-compose.yml
+!contrib/docker-compose.yml
+binaries
+navidrome-*
+/ndpgen
+AGENTS.md
+.github/prompts
+.github/instructions
+.github/git-commit-instructions.md
+*.exe
+*.test
+*.wasm
+*.ndp
+openspec/
+.agents
+go.work*
+.worktrees/
+.playwright-mcp/
+
+# Temp benchmark files
+zz_*_test.go
+
+# wazero compilation cache for the plugins test suite
+/plugins/testdata/.wazero-cache/
+/plugins/testdata/*.stage/
+
+# Private runtime and Python generated files
+.env
+.env.*
+!.env.example
+__pycache__/
+*.pyc
+
+# Private helper state and Docker registry credentials
+.private/
+
+# Clean public releases fetch upstream regression fixtures explicitly.
+# Existing private tracked fixtures are retained in their original history.
+/tests/fixtures/
+/server/testdata/
+/plugin-staging/
+/demo-music/
+
+# This is a source build recipe, not a compiled Go test binary.
+!Dockerfile.test

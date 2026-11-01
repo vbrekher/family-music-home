@@ -1,0 +1,15 @@
+# syntax=docker/dockerfile:1
+# Local development only. Never publish this test image or its fetched fixtures.
+FROM golang:1.27-alpine@sha256:b8c9b82affbbb82a020bbcf998dad2ba9516944ac7e883524642a481a9505e9c
+RUN apk add --no-cache gcc musl-dev zlib-dev git ffmpeg chromaprint make zip python3
+ENV GOMAXPROCS=2 GOTELEMETRY=off
+WORKDIR /src
+COPY go.mod go.sum ./
+RUN go mod download
+COPY . .
+RUN python3 scripts/fetch-upstream-test-fixtures.py
+RUN --mount=type=cache,target=/root/.cache/go-build make -C plugins/testdata -j2
+RUN chown -R 502:20 /src /go/pkg/mod
+ENV GOCACHE=/tmp/go-build-cache GOPATH=/tmp/gopath GOMODCACHE=/go/pkg/mod GOMAXPROCS=2 GOTELEMETRY=off
+USER 502:20
+CMD ["go", "test", "-mod=readonly", "-p", "1", "-tags", "netgo,sqlite_fts5", "./..."]
