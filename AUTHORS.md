@@ -1,11 +1,9 @@
-# Family Music Home credits
+# Who made Family Music Home?
 
-**Project Owner / Maintainer:** [@aitishnyk](https://github.com/aitishnyk)
+Created by [@vbrekher](https://github.com/vbrekher).
 
-**Project Co-author:** [@krisbrekher](https://github.com/krisbrekher)
+A special thank-you to my beloved wife [@krisbrekher](https://github.com/krisbrekher) for her ideas and inspiration. ❤️
 
-## Upstream authors
+## Thank you to Navidrome
 
-Family Music Home is an unofficial derivative of [Navidrome](https://github.com/navidrome/navidrome), licensed under GNU GPL version 3. Original Navidrome copyright notices and contributor attribution remain in the source. See [NOTICE.md](NOTICE.md) for the precise upstream revision and [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) for component licenses.
-
-Project-level credits do not claim that any person wrote every source file or commit. Public source snapshots start a new history; this does not erase the upstream authors' copyright or invent individual commit co-authorship.
+Family Music Home is built on [Navidrome](https://github.com/navidrome/navidrome). The original Navidrome authors and contributors deserve credit for the music server behind this project. Their copyright notices and GNU GPLv3 license remain in the source; see [NOTICE.md](NOTICE.md) and [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
