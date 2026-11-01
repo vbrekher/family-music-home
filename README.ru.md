@@ -72,11 +72,9 @@ docker compose -f compose.family.yml exec music cat /data/setup-token
 
 GNU GPL version 3: [LICENSE](LICENSE), [NOTICE](NOTICE.md), [сторонние компоненты](THIRD_PARTY_NOTICES.md), [отличия upstream](UPSTREAM_DIFFERENCES.ru.md). Copyright и авторство исходного Navidrome сохранены. Это не официальный релиз Navidrome.
 
-## Project credits
+## Кто создал проект
 
-**Project Owner / Maintainer:** [@aitishnyk](https://github.com/aitishnyk)
-
-**Project Co-author:** [@krisbrekher](https://github.com/krisbrekher)
+Автор — [@vbrekher](https://github.com/vbrekher). За идеи и вдохновение спасибо моей любимой жене [@krisbrekher](https://github.com/krisbrekher). ❤️
 
 ## Поддержка разработки
 
