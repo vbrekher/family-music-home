@@ -19,7 +19,7 @@ Use synthetic identities/music and disposable volumes. Never attach your product
 Changes to public releases pass the [safe export process](../../scripts/export_public_release.py): exact committed blobs, explicitly reviewed path/hash allowlist, private-value denylist supplied locally, secret scanning, clean independent build and a new public history. Do not mirror private development refs. No GitHub Actions, hosted builds or automatic reviewer assignments are required.
 
 ---
-Project Owner / Maintainer: [@aitishnyk](https://github.com/aitishnyk). Project Co-author: [@krisbrekher](https://github.com/krisbrekher). Unofficial Navidrome fork; GPLv3.
+Created by [@vbrekher](https://github.com/vbrekher), with thanks to my beloved wife [@krisbrekher](https://github.com/krisbrekher) for her ideas. Unofficial Navidrome fork; GPLv3.
 
 ## Upstream regression data
 
