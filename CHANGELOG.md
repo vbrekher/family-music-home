@@ -15,4 +15,4 @@ Family Music Home is an unofficial GPLv3 fork based on Navidrome v0.64.2. This s
 
 Acceptance remains separately recorded in release reports. This entry describes implementation; it does not claim a completed personal production rollout, physical-device test or public publication before those actually occur.
 
-Project Owner / Maintainer: @aitishnyk. Project Co-author: @krisbrekher.
+Created by [@vbrekher](https://github.com/vbrekher). With love and thanks to my wife [@krisbrekher](https://github.com/krisbrekher) for her ideas. ❤️
