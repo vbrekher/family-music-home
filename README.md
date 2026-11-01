@@ -72,11 +72,9 @@ The release profile targets Linux/amd64 in Docker Desktop. Codecs depend on the 
 
 GNU GPL version 3: [LICENSE](LICENSE), [NOTICE](NOTICE.md), [third-party components](THIRD_PARTY_NOTICES.md), [upstream differences](UPSTREAM_DIFFERENCES.md). Original Navidrome copyright and authorship are preserved. This is not an official Navidrome release.
 
-## Project credits
+## Who made this?
 
-**Project Owner / Maintainer:** [@aitishnyk](https://github.com/aitishnyk)
-
-**Project Co-author:** [@krisbrekher](https://github.com/krisbrekher)
+Made by [@vbrekher](https://github.com/vbrekher). A special thank-you to my beloved wife [@krisbrekher](https://github.com/krisbrekher) for her ideas and inspiration. ❤️
 
 ## Support development
 
