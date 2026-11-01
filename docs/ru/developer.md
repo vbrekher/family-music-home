@@ -19,7 +19,7 @@ Go требует CGO, C toolchain и SQLite FTS5. В локальном Go Dock
 Публичные обновления проходят [безопасный экспорт](../../scripts/export_public_release.py): фиксированные committed blobs, проверенный allowlist путей/хешей, локальный denylist приватных значений, secret scan, независимую сборку и новую публичную историю. Не зеркалируйте private refs. GitHub Actions, облачные сборки и автоматическое назначение reviewers не требуются.
 
 ---
-Project Owner / Maintainer: [@aitishnyk](https://github.com/aitishnyk). Project Co-author: [@krisbrekher](https://github.com/krisbrekher). Неофициальный форк Navidrome; GPLv3.
+Автор — [@vbrekher](https://github.com/vbrekher). За идеи спасибо моей любимой жене [@krisbrekher](https://github.com/krisbrekher). Неофициальный форк Navidrome, GPLv3.
 
 ## Данные регрессии upstream
 
