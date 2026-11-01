@@ -18,4 +18,4 @@
 
 Личный сервер Bunny сохранён без изменений. Обновление заблокировано отсутствием доступного официального способа получить свежую полную копию production-тома, включая пакеты и состояние плагинов. Успешное локальное восстановление не заменяет эту копию; production PASS не заявляется. [Подробный статус](../release/PRODUCTION_STATUS.md).
 
-Project Owner / Maintainer: [@aitishnyk](https://github.com/aitishnyk). Project Co-author: [@krisbrekher](https://github.com/krisbrekher).
+Автор — [@vbrekher](https://github.com/vbrekher). За идеи и вдохновение спасибо моей любимой жене [@krisbrekher](https://github.com/krisbrekher). ❤️
