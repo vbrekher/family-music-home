@@ -8,4 +8,4 @@ Lyrics, Apple Music metadata and Cover Art Archive are third-party plugins, not 
 
 The public Docker installation starts with no accounts and needs no Bunny service. Existing protected deployments retain their separate guarded bootstrap, persistent data and identities. Neither the upstream project nor the fork provides hosting; users pay their own optional infrastructure costs.
 
-Project Owner / Maintainer: [@aitishnyk](https://github.com/aitishnyk). Project Co-author: [@krisbrekher](https://github.com/krisbrekher).
+Created by [@vbrekher](https://github.com/vbrekher). Thanks to my beloved wife [@krisbrekher](https://github.com/krisbrekher) for the ideas and inspiration. ❤️
