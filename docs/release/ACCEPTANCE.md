@@ -28,4 +28,4 @@ The personal Bunny release candidate is **not deployed**: see [production status
 
 [UI audit](../design/UI_AUDIT.md) · [Feature matrix](feature-matrix.json) · [Security review](SECURITY_REVIEW.md) · [Gallery](../en/gallery.md).
 
-Project Owner / Maintainer: @aitishnyk. Project Co-author: @krisbrekher. Unofficial Navidrome fork, GPLv3.
+Created by [@vbrekher](https://github.com/vbrekher), with heartfelt thanks to my wife [@krisbrekher](https://github.com/krisbrekher) for her ideas. Unofficial Navidrome fork, GPLv3.
