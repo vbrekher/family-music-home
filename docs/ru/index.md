@@ -32,7 +32,7 @@
 - [Детский музыкальный мир](features/kids.md)
 - [Архив истории](features/legacy.md)
 
-Project Owner / Maintainer: [@aitishnyk](https://github.com/aitishnyk). Project Co-author: [@krisbrekher](https://github.com/krisbrekher).
+Автор — [@vbrekher](https://github.com/vbrekher). За идеи и вдохновение спасибо моей любимой жене [@krisbrekher](https://github.com/krisbrekher). ❤️
 
 [Release acceptance](../release/ACCEPTANCE.md) · [Security review](../release/SECURITY_REVIEW.md) · [Personal production status](../release/PRODUCTION_STATUS.md)
 
