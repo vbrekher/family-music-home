@@ -8,4 +8,4 @@ Lyrics, Apple Music и Cover Art Archive — сторонние плагины. 
 
 Публичная Docker-установка не содержит учётных записей и не требует Bunny. Существующие защищённые установки сохраняют отдельный проверяемый bootstrap, постоянные данные и прежние идентичности. Проекты не предоставляют хостинг; пользователь оплачивает только выбранную им инфраструктуру.
 
-Владелец и сопровождающий проекта: [@aitishnyk](https://github.com/aitishnyk). Соавтор проекта: [@krisbrekher](https://github.com/krisbrekher).
+Автор — [@vbrekher](https://github.com/vbrekher). За идеи и вдохновение спасибо моей любимой жене [@krisbrekher](https://github.com/krisbrekher). ❤️
