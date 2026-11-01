@@ -10,4 +10,4 @@ Physical phones/tablets/NAS, native browser 200% zoom and the visible macOS noti
 
 The maintainer’s personal Bunny server is preserved, without a production rollout. Provider-supported complete-volume backup access is still required before an image-only update; local backup rehearsal does not satisfy the fresh production backup gate. [Production status](../release/PRODUCTION_STATUS.md).
 
-Project Owner / Maintainer: [@aitishnyk](https://github.com/aitishnyk). Project Co-author: [@krisbrekher](https://github.com/krisbrekher). Upstream copyright and dependency notices are retained.
+Made by [@vbrekher](https://github.com/vbrekher). Thank you to my beloved wife [@krisbrekher](https://github.com/krisbrekher) for the ideas and inspiration. ❤️ Original Navidrome copyright and dependency notices are preserved.
