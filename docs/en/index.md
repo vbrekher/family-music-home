@@ -32,7 +32,7 @@
 - [Kids Music World](features/kids.md)
 - [Legacy Export](features/legacy.md)
 
-Project Owner / Maintainer: [@aitishnyk](https://github.com/aitishnyk). Project Co-author: [@krisbrekher](https://github.com/krisbrekher).
+Created by [@vbrekher](https://github.com/vbrekher). Thanks to my beloved wife [@krisbrekher](https://github.com/krisbrekher) for her ideas and inspiration. ❤️
 
 [Release acceptance](../release/ACCEPTANCE.md) · [Security review](../release/SECURITY_REVIEW.md) · [Personal production status](../release/PRODUCTION_STATUS.md)
 
