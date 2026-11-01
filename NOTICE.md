@@ -4,7 +4,7 @@ Family Music Home is an unofficial modified version of [Navidrome](https://githu
 
 Copyright in the original code remains with the Navidrome authors and contributors. Existing file headers, licenses and notices remain applicable. The complete derivative application is distributed under GNU GPL version 3; see [LICENSE](LICENSE). There is no warranty. The GPL permits commercial use, modification and redistribution under its terms.
 
-Project Owner / Maintainer: [@aitishnyk](https://github.com/aitishnyk). Project Co-author: [@krisbrekher](https://github.com/krisbrekher). These are project-level credits, not a claim of authorship of all upstream code or of every commit.
+Family Music Home was created by [@vbrekher](https://github.com/vbrekher), with love and thanks to my wife [@krisbrekher](https://github.com/krisbrekher) for her ideas and inspiration. The original Navidrome authors and contributors retain credit for their work.
 
 The fork adds the eleven family workflows, external read-only storage integration, bounded diagnostics companion, macOS add-only uploader, per-user theme integration, privacy controls and deployment/recovery tooling. See [UPSTREAM_DIFFERENCES.md](UPSTREAM_DIFFERENCES.md).
 
